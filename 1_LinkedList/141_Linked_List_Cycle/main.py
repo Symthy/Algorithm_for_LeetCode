@@ -16,3 +16,17 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
         return False
+    
+    def hasCycle2(self, head: Optional[ListNode]) -> bool:
+        nodes = set()
+        if head == None:
+            return False
+        node = head
+        while True:
+            if node in nodes:
+                return True
+            nodes.add(node)
+            if node.next == None:
+                break
+            node = node.next
+        return False
