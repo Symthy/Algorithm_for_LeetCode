@@ -26,6 +26,7 @@ class Solution:
         return 1
 
 
+# 自己回答
 class Solution2:
     def numIslands(self, grid: List[List[str]]) -> int:
         count = 0
